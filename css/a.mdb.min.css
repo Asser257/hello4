@@ -1,0 +1,360 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black !important;
+    color: white !important;
+    overflow-x: hidden;
+}
+section{
+    height: 100vh;
+}
+.hero{
+    
+    background-size: cover;
+    background-attachment: fixed;
+position: relative;
+background-image: url(../img/hero-bg\ \(1\).jpg);
+}
+.hero::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+section:nth-child(1) img{
+opacity: 0.4;
+position: relative;
+width: 100%;
+}
+.navbar{
+    /* background-color: rgba(0, 0, 0, 0.719) !important; */
+    background-color: black !important;
+    position: fixed;
+top: 0;
+    width: 100%;
+z-index: 15;
+
+}
+.navbar h3 {
+    font-size: 30px !important;
+color:#ffffff !important;
+opacity: 1 !important;
+}
+.navbar a{
+    color: white;
+}
+.navbar a:hover{
+    color: #CDA45E !important;
+}
+.btn-rounded{
+    width: 150px !important;
+    border: 3px solid #CDA45E;
+color: white;
+}
+.btn-rounded:hover{
+        background-color:#CDA45E !important;
+        color: white;
+
+
+}
+ .fa-bars{
+    color: white !important;
+ }
+.dropdown-toggle{
+    background-color: transparent !important;
+}
+.navbar-nav{
+display: flex !important;
+align-items: center !important;
+}
+.navbar-brand{
+    display: flex !important;
+text-align: center !important;
+}
+h3{
+    margin: 0 !important;
+}
+
+
+
+.main1 h1 span{
+    color: #CDA45E;
+}
+
+.content1 a{
+    display:flex;
+    /* overflow: hidden; */
+position: absolute;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    width: 95px;
+    height: 95px;
+    background:radial-gradient(#cda45e 50%, rgba(205, 164, 94, 0.4) 52%);
+    border-radius: 50%;
+    opacity: 5;
+transition: all 0.3s ease;
+}
+.content1 a::after{
+
+    content: "";
+    position: absolute ;
+height: 0px;
+width: 0px;
+border-top: 10px  transparent solid;
+border-bottom: 10px  transparent solid;
+border-left: 15px solid white;
+transition: all 0.3s ease;
+}
+
+.content1 a::before{
+    content: "";
+    position: absolute;    
+    height: 90px;
+    width: 90px;
+    border: 2px solid #cda45e;
+    border-radius: 50%;
+    animation: bounceOut 1.5s ;
+    animation-iteration-count: infinite;
+    background-color: rgba(198, 16, 0, 0);
+}
+.content1 a:hover{
+background-color: #CDA45E;
+}
+.content1 a:hover::before{
+    animation: none ;
+}
+.content1 a:hover::after{
+    border-top: 15px  transparent solid;
+border-bottom: 15px  transparent solid;
+border-left: 25px solid white;
+position: absolute;
+margin: 0 ;
+}
+.main1{
+    width: 100%;
+    position:absolute;
+    top: 100px;
+color: white;
+padding: 200px 30px 0;
+
+}
+.main1 h1{
+    color: white !important;
+opacity: 1;
+font-size: 60px;
+}
+.main1 p{
+    font-size: 25px;
+}
+.main2{
+    position: relative;
+}
+.main-main{
+    position: relative;
+}
+section:nth-child(2){
+    background-image: url(../img/about-bg\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+section:nth-child(2)::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.special{
+    padding: 50px;
+position: absolute;
+
+width: 100% !important;
+/* text-align: center; */
+}
+.special p{
+    padding: 10px 0;
+    font-size: 15px;
+}
+.special p i{
+    color: #CDA45E;
+    padding: 5px;
+}
+.special img{
+
+    width: 100%;
+    height: fit-content;
+    outline: 5px solid gray;
+    transition: all 0.2s ease;
+}
+.imgg{
+    position: relative;
+    height: fit-content;
+}
+.special img:hover{
+    scale: 1.1;
+}
+ .imgg:hover .spann{
+    top: 0%;
+    left: 1%;
+    scale: 1.1;
+}
+.imgg:hover .spannn{
+    
+    bottom: 0%;
+    right: 1%;
+    scale: 1.1;
+}
+@media only screen and (min-width:200px) and (max-width:1200px) {
+    section:nth-child(1){
+        text-align: center;
+        
+
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:768px) {
+
+    section{
+        height: 170vh;
+    
+    }
+   section:nth-child(4){
+    height: 200vh !important;
+   }
+
+}
+@media only screen and (min-width:768px) and (max-width:1200px){
+    section{
+        height: 150vh;
+  
+    }
+    
+}
+.imgg{
+    position: relative;
+}
+.spann{
+    display: flex;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+width: 50px;
+height: 50px;
+    border-top: 5px solid #CDA45E ;
+    border-left: 5px solid #CDA45E;
+transition: all 0.3s ease;
+}
+.spannn{
+    display: flex;
+    position: absolute;
+    right: 3%;
+bottom: 2%;
+width: 50px;
+height: 50px;
+    border-bottom: 5px solid #CDA45E ;
+    border-right: 5px solid #CDA45E;
+transition: all 0.3s ease;
+}
+section:nth-child(3){
+    padding: 50px;
+}
+section:nth-child(3) div p{
+    color: gray;
+}
+section:nth-child(3) div h1{
+    color: #CDA45E;
+}
+.special3 p{
+    
+    color: #ffffff !important;
+}
+.special3 div{
+    height: fit-content;
+    padding: 10px;
+    background-color: #1A1814;
+    overflow: hidden;
+transition: all 0.3s ease;
+}
+.special3 div:hover {
+    background-color: #CDA45E;
+}
+.special3 div:hover .concon{
+    background-color: #CDA45E;
+    color: white !important;
+    transform: translate(0,0);
+
+}
+
+.special3 div:hover span p{
+    color: #ffffff !important;
+} 
+.special3 div span p{
+    color: #CDA45E !important;
+    font-size: 20px;
+}
+.special3 .concon{
+    transform: translate(0,20px);
+}
+.nav-tabs{
+    background-color: transparent !important;
+}
+.nav-tabs a{
+    color: rgb(255, 255, 255) !important;
+}
+.nav-tabs .nav-link{
+    background-color: transparent !important;
+
+}
+.nav-tabs .nav-link.active{
+    border-color: #CDA45E;
+    color: #CDA45E !important;
+}
+/* .parts{
+    align-items: center;
+    position: relative;
+} */
+
+.container-fluid{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+h3 p{
+    color: gray;
+}
+.special4{
+    margin: 10px 0;
+}
+.special4 img{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    border-radius: 50%;
+    outline: 5px solid gray;
+}
+.special4 h3{
+    font-size: 25px;
+    color: #CDA45E;
+    text-transform: capitalize;
+}
+.special4 h3 span{
+    color: white;
+}
+.special5{
+    color: gray;
+font-style: italic;
+}
+section:nth-child(4){
+    background-color: #1A1814;
+    height: 120vh;
+}
