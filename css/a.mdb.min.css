@@ -9,6 +9,10 @@ body{
 section{
     height: 100vh;
 }
+.fir{
+    position: fixed;
+    color: white !important;
+}
 .hero{
     
     background-size: cover;
@@ -31,14 +35,24 @@ position: relative;
 width: 100%;
 }
 .navbar{
+    transition: all 0.5s ease;
     /* background-color: rgba(0, 0, 0, 0.719) !important; */
-    background-color: black !important;
     position: fixed;
-top: 0;
+top: 30px;
     width: 100%;
 z-index: 15;
+background-color: transparent !important;
+box-shadow: none !important;
+border: none !important;
 
 }
+.navbar-scrolled{
+    transition: all 0.5s ease;
+position: fixed;
+    top: 0;
+    background-color: black !important;
+}
+
 .navbar h3 {
     font-size: 30px !important;
 color:#ffffff !important;
@@ -65,7 +79,15 @@ color: white;
     color: white !important;
  }
 .dropdown-toggle{
+    border: none !important;
+    box-shadow: none !important;
     background-color: transparent !important;
+}
+.dropdown-item{
+    color: black !important;
+}
+.dropdown-menu a{
+    color: balck !important;
 }
 .navbar-nav{
 display: flex !important;
