@@ -1,7 +1,12 @@
 *{
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: white !important;
+}
 body{
+    
     background-color: black !important;
     color: white !important;
     overflow-x: hidden;
@@ -12,6 +17,11 @@ section{
 .fir{
     position: fixed;
     color: white !important;
+    text-align: center;
+}
+.fir i {
+    color: #CDA45E !important;
+    padding: 0 5px;
 }
 .hero{
     
@@ -52,6 +62,13 @@ position: fixed;
     top: 0;
     background-color: black !important;
 }
+.bars-new{
+    background-color: black;
+    padding: 30px;
+}
+.navbar .nav-item .nav-link{
+    color: white !important;
+}
 
 .navbar h3 {
     font-size: 30px !important;
@@ -67,7 +84,7 @@ opacity: 1 !important;
 .btn-rounded{
     width: 150px !important;
     border: 3px solid #CDA45E;
-color: white;
+color: white !important;
 }
 .btn-rounded:hover{
         background-color:#CDA45E !important;
@@ -235,12 +252,27 @@ width: 100% !important;
     scale: 1.1;
 }
 @media only screen and (min-width:200px) and (max-width:1200px) {
+    .navbar-collapse{
+padding: 0 !important;
+width: fit-content !important;
+    }
     section:nth-child(1){
         text-align: center;
         
 
     }
 }
+@media only screen and (min-width:200px) and (max-width:992px) {
+   
+    .navbar-toggler{
+        display: flex;
+    }
+    
+nav .container{
+    max-width: 100% !important;
+}
+}
+
 
 @media only screen and (min-width:200px) and (max-width:768px) {
 
@@ -248,7 +280,7 @@ width: 100% !important;
         height: 170vh;
     
     }
-   section:nth-child(4){
+   .nth-4{
     height: 200vh !important;
    }
 
@@ -376,7 +408,96 @@ h3 p{
     color: gray;
 font-style: italic;
 }
-section:nth-child(4){
+.nth-4{
     background-color: #1A1814;
-    height: 120vh;
+    height: fit-content !important;
+}
+section:nth-child(4) h1{
+color: #CDA45E;
+}
+.sec6{
+    height: max-content;
+    background-color: #0C0B09;
+}
+.special6{
+    border-right: #CDA45E solid 2px;
+}
+.sec6 .nav-tabs .nav-link.active{
+    background-color: #CDA45E !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.tab-content>.active{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.special7 div{
+    padding: 0 10px;
+}
+.special7 img{
+    width: 100%;
+}
+.special10{
+    color: gray;
+}
+.sec6 h1{
+    color: #CDA45E;
+}
+.sec6 .special10{
+    text-transform: uppercase;
+}
+.sec7{
+    background-image: url(../img/events-bg\ \(1\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: none;
+    position: relative;
+    height: max-content !important;
+}
+.sec7::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.sec7 h3{
+    color: #CDA45E;
+    font-size:35px;
+    text-transform: capitalize;
+}
+.sec7 h2{
+    width: fit-content;
+    border-bottom: #CDA45E solid 3px;
+}
+
+.navbar-light .navbar-toggler{
+    text-align: left !important;
+}
+.special11{
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar-clicked{
+    position: fixed;
+    top: 0;
+    background-color: black !important;
+padding: 30px;
+}
+footer{
+    background-image: none !important;
+    /* background-color: #0C0B09 !important; */
+
+}
+footer section{
+    height: fit-content;
+    /* background-color: #0C0B09 !important; */
+    background-image: none !important;
+    
+}
+footer li{
+    padding: 10px 0 !important;
 }

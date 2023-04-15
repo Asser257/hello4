@@ -10,3 +10,6 @@ navEl.classList.remove('navbar-scrolled')
 
 
 })
+function myFunction(){
+navEl.classList.add('navbar-clicked');
+}
